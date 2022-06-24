@@ -30,8 +30,11 @@ body {
 .header {
     width: 600px;
     margin: auto;
-    background-color: var(--soft-red);
     border-radius: 20px;
+}
+
+.header {
+    background-color: var(--soft-red);
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -47,7 +50,7 @@ body {
 }
 
 .header__subtitle {
-    font-weight: 500;
+    font-weight: 700;
     font-size: 2rem;
     padding: 1rem 1rem 2rem 1.5rem ;
 }
@@ -77,4 +80,87 @@ body {
     background-color: var(--dark-brown);
     position: relative;
     left: -.6rem;
+}
+
+.main, .footer {
+    background-color: var(--pale-orange);
+}
+
+.main {
+    width: 600px;
+    margin: auto;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-top: 1.5rem;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.main__title {
+    font-size: 2rem;
+    font-weight: 700;
+    padding-top: 2rem;
+    padding-left: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--dark-brown);
+}
+
+.main__chart {
+    width: 100%;
+    height: 300px;
+    margin: 1rem auto 0;
+    padding: 1.5rem 2.5rem;
+    border-bottom: 2px solid var(--cream);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.chart__container {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.chart__day {
+    color: var(--medium-brown);
+    font-size: 1rem;
+    margin-top: .5rem;
+}
+
+.chart__datas {
+    width: 50px;
+    background-color: var(--soft-red);
+    border-radius: 5px;
+}
+
+.footer {
+    width: 600px;
+    margin: auto;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 2.5rem 3rem 2.5rem;
+}
+
+.footer__subtitle {
+    color: var(--medium-brown);
+}
+
+.footer__currency {
+    color: var(--dark-brown);
+    font-weight: 700;
+    font-size: 2.8rem;
+    margin-top: 1rem;
+}
+
+.footer__progression {
+    font-weight: 700;
+    color: var(--dark-brown);
+    text-align: right;
+    margin-bottom: .5rem;
 }
