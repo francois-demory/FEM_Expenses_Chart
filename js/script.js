@@ -15,6 +15,10 @@ function drawChart() {
         const chartHeight = (data.amount * 300)/100;
         chartDatas.style.height = chartHeight + 'px';
 
+        if (day.innerHTML === 'wed') {
+            chartDatas.classList.add('chart__datas--wed');
+        }
+
         chart.appendChild(container);
         container.appendChild(chartDatas);
         container.appendChild(day);
