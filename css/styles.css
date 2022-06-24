@@ -1,0 +1,80 @@
+:root {
+    --soft-red: hsl(10, 79%, 65%);
+    --cyan: hsl(186, 34%, 60%);
+    --dark-brown: hsl(25, 47%, 15%);
+    --medium-brown: hsl(28, 10%, 53%);
+    --cream: hsl(27, 66%, 92%);
+    --pale-orange: hsl(33, 100%, 98%);
+}
+
+body {
+    font-size: 1.1rem;
+    font-family: 'DM Sans', sans-serif;
+    background-color: var(--cream);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.app {
+    max-width: 1440px;
+    margin: 5rem auto;
+}
+
+.header {
+    width: 600px;
+    margin: auto;
+    background-color: var(--soft-red);
+    border-radius: 20px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.header__title, .header__subtitle {
+    color: #FFF;
+}
+
+.header__title {
+    padding-top: 2rem;
+    padding-left: 1.5rem;
+}
+
+.header__subtitle {
+    font-weight: 500;
+    font-size: 2rem;
+    padding: 1rem 1rem 2rem 1.5rem ;
+}
+
+.header__logos {
+    width: 33%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.header__logo--light {
+    border: 2px solid #FFF;
+    position: relative;
+    left: .6rem;
+    z-index: 1;
+}
+
+.header__logo--dark {
+    background-color: var(--dark-brown);
+    position: relative;
+    left: -.6rem;
+}
