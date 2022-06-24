@@ -2,6 +2,7 @@ import datas from '../data.json' assert {type : 'json',};
 
 function drawChart() {
     const chart = document.querySelector('.main__chart');
+
     datas.forEach(data => {
         const container = document.createElement('div');
         const day = document.createElement('div');
