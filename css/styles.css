@@ -134,8 +134,26 @@ body {
     border-radius: 5px;
 }
 
+.chart__datas:hover {
+    opacity: 0.5;
+}
+
 .chart__datas--wed {
     background-color: var(--cyan);
+}
+
+.chart__datas__modal {
+    visibility: hidden;
+    width: 75px;
+    background-color: var(--dark-brown);
+    border-radius: 5px;
+    padding: .8rem 0.1rem;
+    margin-bottom: .5rem;
+    color: #FFF;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    
 }
 
 .separator {
